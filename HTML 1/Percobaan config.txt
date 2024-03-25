@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-Senin, 25 Maret 2024
-=======
 25 Maret 2024
 selasa, 26 Maret 2024
->>>>>>> 2d183e270ac109418306d4caca6d578510f19aa1
