@@ -76,11 +76,10 @@ footer{
 }
 
 .card-img-top {
-    flex-grow: 1;
-    width: 200px;
-    height: 200px;
-    justify-content: space-around;
+    height: 400px;
+    width:300px;
+    margin: auto;
 }
-
-
- *
+.footbar1 li img{
+    width: 40px;
+}
