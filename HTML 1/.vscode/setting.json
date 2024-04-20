@@ -1,5 +1,6 @@
 {
-    "window.zoomLevel": 1,
-    "editor.fontsize":18,
-    "editor.wordmap" : "on"
+    "window.zoomLevel": 4,
+    "editor.fontsize":120,
+    "editor.wordmap" : "on",
+    "terminal.integrated.fontSize":50
 }
