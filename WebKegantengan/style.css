@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+    text-decoration: none;
+}
+
+header {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #5C5C5C;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height:100px;
+    
+}
+
+header h1{
+    /* background-color: aqua; */
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: white;
+
+}
+.navbar1{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: antiquewhite; */
+    list-style-type: none;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.hero{
+    margin-top: 100px;
+    background-color: ;
+    background-color: #D9D9D9;
+}
+
+.hero2 {
+    border-top: 3px solid black;
+    /* background-color: #5C5C5C; */
+}
+
+.tombol1{
+    /* border: 1px solid black; */
+    background-color: #5C5C5C;
+    border-radius: 30px;
+    color: white;
+}
+
+.keunggulan{
+    background-color: #5C5C5C;
+    color: white;
+    padding: 1em 7em;
+}
+.tombol2{
+    /* border: 1px solid black; */
+    background-color: #5C5C5C;
+    border-radius: 30px;
+    color: white;
+}
+
+.tentangKami{
+    margin-bottom: 200px;
+}
+.tentangKami .container{
+    background-color: #5C5C5C;
+}
+
+.tentangKami p{
+    color: white;
+
+}
+
+.tombol3{
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    color: #5C5C5C;
+}
+
+footer{
+    background-color: #5C5C5C;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footbar1 li{
+    list-style-type: none;
+}
+
+ */
+
