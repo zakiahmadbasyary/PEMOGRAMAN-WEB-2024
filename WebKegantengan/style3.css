@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 
 }
 body{
@@ -86,8 +87,12 @@ a{
 }
 
 .atas {
-    background-color: aqua;
+    background-color: white;
 }
+
+/* #product1 .col{
+    height: 300px;
+} */
 
 
 footer{
@@ -103,4 +108,10 @@ footer{
 
 .footbar1 li img{
     width: 40px;
+}
+
+@media (max-width: 768px) {
+    footer h1{
+        visibility: hidden;
+    }    
 }

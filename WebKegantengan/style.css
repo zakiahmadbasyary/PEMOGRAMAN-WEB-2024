@@ -116,3 +116,10 @@ footer{
 .footbar1 li img{
     width: 40px;
 }
+
+
+@media (max-width: 768px) {
+    footer h1{
+        visibility: hidden;
+    }    
+}
