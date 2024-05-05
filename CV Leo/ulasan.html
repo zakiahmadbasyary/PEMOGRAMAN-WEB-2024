@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ulasan.css">
+    <title>Ulasan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Header-->
+    <div class="container-fluid p-4 px-5 fixed-top">
+        <div class="navbar-brand mb-0 h1">Kritik dan Saran</div>
+    </div>
+
+    <!--Ulasan-->
+    <div class="Ulasan">
+        <form class="mt-4 px-5">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="npm" class="form-label">NPM</label>
+                <input type="text" class="form-control" id="npm" placeholder="Masukkan NPM Anda">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="kritik" class="form-label">Kritik</label>
+                <textarea class="form-control" id="kritik" placeholder="Berikan Kritik..." rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="saran" class="form-label">Saran</label>
+                <textarea class="form-control" id="saran" placeholder="Berikan Saran..." rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary mb-5 mt-2 px-4" onclick="tampilkanPesan()">Kirim</button>
+        </form>
+    </div>
+
+    <!--Notifikasi-->
+    <script>
+        function tampilkanPesan() {
+            // Menampilkan pesan dalam kotak dialog
+            alert("Ulasan Berhasil Dikirim");
+        }
+    </script>
+
+    <!--Footer-->
+    <footer class="bg-primary text-white text-center pb-2 pt-3" id="ulasan">
+        <p>
+          Kembali ke Beranda, Klik
+          <a
+            href="index.html"
+            class="text-white fw-bold"
+            >Disini</a>
+        </p>
+    </footer>
+</body>
