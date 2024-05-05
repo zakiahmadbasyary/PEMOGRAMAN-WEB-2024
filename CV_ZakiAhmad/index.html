@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curriculum Vitae</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#161616;
+        }
+        span{
+            color: rgb(19, 120, 123);
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover{
+            color: rgb(19, 120, 123);
+        }
+    </style>
+
+</head>
+<body >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top" style="background-color: rgb(19, 120, 123);">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand fw-bold fs-1 text-light" href="#">Curriculum Vitae</a>
+        </div>
+    </nav>
+    
+    <!-- konten top hero -->
+    <div class="hero " style="padding-top: 100px;">
+        <div class="container d-flex flex-row">
+            <div class="kiri w-50 d-flex flex-column align-items-center" >
+                <img class="img-fluid " style=" width:25rem ;border-radius: 20%;" src="profilZaki.jpg" alt="Gambar Produk">
+                <p class="pt-3 fs-3 text-center text-light fw-light"><span class="fw-bold">"</span>Teruslah Mencoba Selagi  <br>Kamu masih bisa mencoba <span class="fw-bold">"</span></p>
+            </div>
+            <div class="kanan  d-flex flex-column w-50 ps-3 justify-content-center" >
+                <p class="text-light fs-5 "><span class="fs-3 fw-bold"  id="greeting">Halo</span>, Selamat Datang. <span class="fs-3 fw-bold">Saya</span></p>
+                <p class="text-light fs-1 fw-bold ">Zaki Ahmad Basyary <span>(ZAKI)</span></p>
+                <p class="text-light fs-3 fw-semibold " >2215061004</p>
+                <p class="text-light fs-4 fw-semibold ">Tanjung Sari, 05 Juli 2004</p>
+                <p class="text-light fs-4 fw-semibold ">08973726311</p>
+                <p class="text-light fs-4 fw-semibold ">zakibasyary@gmail.com</p>
+                <button type="button" class="btn btn-light" onclick="changeGreeting()">Ganti Sapaan</button>
+                <script>
+                    function changeGreeting() {
+                        var greetings = ["Hello", "Bonjour", "Hola", "Ciao", "Konnichiwa"];
+                        var randomIndex = Math.floor(Math.random() * greetings.length);
+                        var newGreeting = greetings[randomIndex];
+                        document.getElementById("greeting").innerText = newGreeting ;
+                    }
+                </script>
+                
+            </div>
+        </div>
+    </div>
+
+    <hr style="color: aliceblue; ">
+
+    <!-- konten 2 -->
+    <div>
+        <div class="container fs-5 text-light p-3 mt-4" style="border:2px solid aliceblue ; border-radius: 20px;">
+            <p><i>Saya seorang <span>mahasiswa semester 4 program studi teknik informatika</span>  jurusan teknik elektro Universitas Lampung. 
+                Terlibat aktif dalam organisasi <span>Himpunan Mahasiswa Teknik Elektro (Himatro)</span> sebagai anggota divisi media informasi 
+                Kominfo. Memiliki pengetahuan tentang <span>bahasa pemrograman C++, Python dan SQL</span>. Memiliki ketertarikan pada bidang kecerdasan buatan dan
+                 analisis data. Saat ini mempelajari lebih lanjut tentang bahasa pemrograman untuk kecerdasan buatan dan data (analisis data dan sains).</i></p>
+        </div>
+    </div>
+    <hr style="color: aliceblue; ">
+
+    <!-- konten 3 -->
+    <div >
+        <div class="container">
+            <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Pendidikan</th>
+                    <th scope="col">Keterangan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Perguruan Tinggi</td>
+                    <td><span class="fw-bold">Universitas Lampung</span> <br>
+                        Berkuliah di program studi Teknik Infomatika yang sedang 
+                        menjalani semester 4. Memiliki Peminatan terhadap AI.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Sekolah Menengah Atas</td>
+                    <td><span class="fw-bold">SMA N 1 Natar</span>
+                        Bersekolah di sekolah menengah atas dengan mengambil
+                        penjurusan Ilmu Pengetahuan Alam (IPA). Bersekolah selama
+                        3 tahun.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Sekolah Menengah Pertama</td>
+                    <td colspan="2"><span class="fw-bold">SMP N 1 Natar</span><br>
+                        Bersekolah di sekolah menengah pertama dengan masuk
+                        dikelas unggulan. Bersekolah selama 3 tahun.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Sekolah Dasar</td>
+                    <td colspan="2"><span class="fw-bold">SD N 3 Negara Ratu</span><br>
+                        Bersekolah di sekolah dasar dengan menempuh selama 6 tahun.</td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+    <hr style="color: aliceblue; ">
+    
+    <!-- konten 4 -->
+    <div class="konten4">
+        <div class="container d-flex flex-row">
+            <div class="kiri w-50 pe-3 " style="border-right: 2px solid beige;">
+                <p class="fs-3 fw-bold text-light text-center">Organisasi</p>
+                <ul class="list-group list-group-item-dark" >
+                    <li class="list-group-item disabled fw-bold text-center" aria-disabled="true">Riwayat Organisasi</li>
+                    <li class="list-group-item"><span class="fw-bold">Himpunan Mahasiswa Teknik Elektro (HIMATRO)</span> <br>
+                        Sebagai anggota divisi media informasi, yang dimana
+                        merupakan divisi bagian penyebaran informasi melalui
+                        media sosial. Memiliki kemampuan dalam hal editing, maupun
+                        design. Menjadi Koordinator PDD pada progja terbesar HIMATRO yaitu EEA 2024.</li>
+                    <li class="list-group-item"><span class="fw-bold">Remaja Islam Masjid (RISMA)</span><br>
+                        Menjadi salah satu anggota  RISMA masjid. Menjadi pantia 
+                        diberbagai acara-acara besar dihari hari besar Islam.</li>
+                    <li class="list-group-item"><span class="fw-bold">Karang Taruna Sidoharjo 1/3</span><br>
+                        Menjadi salah satu anggota Karang Taruna dengan kegiatannya yaitu
+                        ikut serta dalam kegiatan masyarakat, kegiatan kepedulian, kegiatan
+                        hari besar nasional, dan lainnya</li>
+                  </ul>
+            </div>
+            <div class="kanan w-50 ps-3">
+                <p class="fs-3 fw-bold text-light text-center">Sertifikat</p>
+                <ul class="list-group list-group-item-dark">
+                    <li class="list-group-item disabled fw-bold text-center" aria-disabled="true">Sertifikat</li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/19yd-5chbdVE3GQf1jHNIUUnS6JQscAVG/view?usp=sharing">Dicoding: Memulai pemograman dengan Java</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/1Fraoyc4NH5UA10G6RDdNLE5yf5WY0c67/view?usp=sharing">Oracle Academy: Database Design</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/1U5ED5AKQcT77kmmcjBnTBRCnEJ2vHjpg/view?usp=sharing">Oracle: database Programming dengan SQL</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/19gN_moKyqT7q3jJf7YuNlcVWB76ljIem/view?usp=sharing">MySkill: Microsoft Excel Profesional</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/1e-lJvAO6SPTGIuRQCfP9Xz9PZEVyp39p/view?usp=sharing">Dicoding: dasar programming untuk pengembangan software</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/1m4ZvJSSZT6hMjZa-TRghOml4FgnnoQ1U/view?usp=sharing">DQLab: Python Fundamental untuk Data Science</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/1xQ1Irv-Hv-7UDpOEsInBjmcu1z08u6gA/view?usp=sharing">Dicoding: Manajemen Proyek</a></li>
+                    <li class="list-group-item"><a href="https://drive.google.com/file/d/19gN_moKyqT7q3jJf7YuNlcVWB76ljIem/view?usp=sharing">MySkill: Microsoft Excel Profesional</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr class="text-light">
+    <!-- konten 5 -->
+
+    <div class="konten5 mt-4 " id="bawah" >
+        <div class="container text-light d-flex flex-row">
+            <div class="atas w-50 pe-3">
+                <p class="fs-3 fw-semibold">Materi Yang sudah Dipelajari</p>
+                <p class="fs-4 ">Pemograman Website</p>
+                <ul>
+                    <li>Pemograman website dengan HTML</li>
+                    <li>Pemograman website dengan CSS</li>
+                    <li>Pemograman website dengan JavaScript</li>
+                    <li>Pemograman website dengan PHP</li>
+                </ul>
+            </div>
+            <div class="bawah w-50 ps-3 ">
+                <p class="fs-3 fw-semibold">Materi Yang sulit dipahami</p>
+                <p class="fs-4 ">Pemograman Website</p>
+                <ul>
+                    <li>Layout pada tampilan website dengan CSS</li>
+                    <li>Kurangnya pemahaman lebih dalam dengan javascript</li>
+                    <li>Penggunaan PHP pada pengolahan data yang lebih kompleks</li>
+                    <li>Penggunaan framework dalam pemograman web</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="text-light">
+
+    <div class="container" style="margin-bottom: 100px;">
+        <a href="kritik.html"><button class="btn btn-outline-secondary w-100" type="button">Kritik Dan saran</button></a>
+    </div>
+
+    <!-- footer -->
+    <footer class="navbar fixed-bottom" style="background-color: rgb(19, 120, 123);">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand fw-bold fs-5 text-light" href="#bawah">&copy; 2024 Zaki Ahmad Basyary. 2215061004.</a>
+        </div>
+    </footer>
+
+</body>
