@@ -1,19 +1,20 @@
 const display = document.getElementById("display");
 
 function appendToDisplay(input) {
-    if (/^[0-9+\-*/.]+$/.test(input)) {
-        display.textContent += input;
-    }
+    display.value += input;
 }
 
 function clearDisplay(){
     display.value = "";
 }
 
+function backspace() {
+    display.value = display.value.slice(0, -1);
+}
+
 function calculate() {
     try {
-        let result = Function('"use strict"; return (' + display.textContent + ')')();
-        display.textContent = result;
+        display.value = eval(display.value);
     } catch (error) {
         display.textContent = "Error";
     }

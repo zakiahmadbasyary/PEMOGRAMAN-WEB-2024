@@ -3,18 +3,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    height: inherit;
+    background: linear-gradient(320deg, #8b436c, #d4b75e, #347c6e);
 }
 #calculator{
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 15%);
+    background-color: rgba(255,255,255,0.75);
+    border : 1px solid rgba(255,255,255,0.01);
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
+    box-shadow: 0 4px 30px rgba(35, 35,35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdroup-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.34);
+    padding: 20px 35px;
 }
 #display{
-    width: 100%;
+    width: 90%;
     padding: 20px;
     font-size: 5rem;
     text-align: left;
