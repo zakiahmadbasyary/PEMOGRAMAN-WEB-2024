@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual Book Kalkulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+    <div class=" text-center bg-primary text-light p-2 mb-3">
+        <h2>USER MANUAL BOOK KALKULATOR </h2>
+        <h3>Kelompok Natar</h3>
+    </div>
+    
+    
+    <div class=" row m-4">
+        <div class="col-4">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">1. Penjelasan Projek Kalkulator</a>
+              <a class="nav-link" href="#item-2">2. Sumber Referensi</a>
+              <a class="nav-link" href="#item-3">3. Penjelasan Source Code</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">3.1 Source Code HTML</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">3.2 Source Code CSS</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-3">3.3 Source Code JavaScript</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-8">
+          <div class="scrollspy-example-2" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" style="height: 80vh; overflow-y: scroll;">
+            <div id="item-1 " >
+              <h4>1. Penjelasan Projek Kalkulator</h4>
+              <p>
+                <img src="img/kalkulator.png" alt="kalkulator" class="gambar ps-5 pe-5 img-fluid">
+                <div class="keterangan text-center mb-2"><i>Gambar 1 Tampilan Projek Kalkulator</i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    Gambar diatas merupakan tampilan dari kalkulator yang dimana sebagai projek 
+                    UAS yang kami ambil. Pada tampilan diatas, untuk kalkulator berisikan 
+                    tampilan-tampilan berupa tombol-tombol angka sebagai angka yang akan dilakukan operasi 
+                    perhitungan, lalu tombol - tombol operator perhitungan yang digunakan untuk menunjukkan 
+                    operator yang akan digunakan. Lalu kalkulator ini menampilkan angka-angka yang akan 
+                    dijumlahkan dengan operator yang digunakan serta akan menampilkan hasil perhitungannya 
+                    ke dalam layar hitam bagian atas. Kalkulator ini dibentuk atau dibuat dari 3 bahasa 
+                    pemrograman yaitu bahasa HTML yang digunakan untuk membentuk kerangka atau struktur dasar 
+                    kalkulator, lalu menggunakan bahasa CSS sebagai bahasa pemrograman yang digunakan untuk 
+                    mengatur style atau gaya dari kalkulator tersebut, dan menggunakan bahasa JavaScript yang 
+                    dimana digunakan untuk melakukan operasi perhitungan yang  terjadi di kalkulator tersebut. 
+                </div>
+              </p>
+            </div>
+            <div id="item-2">
+              <h4>2. Sumber Referensi</h4>
+              <p>
+                <div class="d-flex justify-content-center mb-2">
+                    <img src="img/sumber.png" alt="kalkulator Sumber" class="gambar ps-5 pe-5 img-fluid ">
+                </div>
+                <div class="keterangan text-center mb-2"><i>Gambar 2 Tampilan Referensi Kalkulatorr</i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    link Referensi: <a href="https://www.youtube.com/watch?v=I5kj-YsmWjM">https://www.youtube.com/watch?v=I5kj-YsmWjM</a> 
+                </div>
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>3. Penjelasan Source Code</h4>
+            </div>
+            <div id="item-3-1">
+              <h6>3.1 Source Code HTML</h6>
+              <p>3.1.a Source Code Asli</p>
+              <div class="d-flex justify-content-center ">
+                <pre class="p-2" style="border: 1px solid black;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                        &lt;div id="calculator"&gt;
+                            &lt;input id="display" readonly&gt;
+                            &lt;div id="keys"&gt;
+                                &lt;button onclick="appendToDisplay('+')" class="operator-btn"&gt;+&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('7')"&gt;7&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('8')"&gt;8&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('9')"&gt;9&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('-')" class="operator-btn"&gt;-&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('4')"&gt;4&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('5')"&gt;5&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('6')"&gt;6&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('*')" class="operator-btn"&gt;*&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('1')"&gt;1&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('2')"&gt;2&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('3')"&gt;3&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('/')" class="operator-btn"&gt;/&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('0')"&gt;0&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('.')"&gt;.&lt;/button&gt;
+                                &lt;button onclick="calculate()"&gt;=&lt;/button&gt;
+                                &lt;button onclick="clearDisplay()" class="operator-btn"&gt;C&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    
+                        &lt;script src="index.js"&gt;&lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    
+                </pre>
+              </div>
+              <div class="keterangan text-center mb-2"><i>Gambar 3.1.a Source Code Asli <HTML></HTML></i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    Kode dimulai dengan !DOCTYPE html> untuk mendefinisikan jenis dokumen sebagai HTML5, 
+                    dan html lang="en"> menunjukkan bahwa bahasa dokumen ini adalah bahasa Inggris. 
+                    Di dalam head>, meta charset="UTF-8"> menetapkan set karakter dokumen ke UTF-8 untuk 
+                    mendukung berbagai karakter, sementara meta name="viewport" content="width=device-width, 
+                    initial-scale=1.0"> memastikan halaman web responsif di berbagai perangkat. Tag title>Document/title> 
+                    memberikan judul "Document" pada halaman yang muncul di tab browser, dan link rel="stylesheet" href="style.css"> 
+                    menghubungkan dokumen dengan file CSS eksternal bernama "style.css" untuk menata tampilan halaman.
+                    Bagian body> memuat konten utama halaman. Di dalamnya, terdapat div id="calculator" 
+                    sebagai wadah utama kalkulator, dengan input field id="display" yang menampilkan angka dan 
+                    hasil kalkulasi, serta bersifat readonly agar pengguna tidak bisa mengetik langsung di dalamnya. 
+                    Div id="keys" berisi tombol-tombol kalkulator. Setiap tombol memiliki atribut onclick yang memanggil 
+                    fungsi JavaScript tertentu untuk menambahkan karakter ke display, seperti appendToDisplay('+') untuk 
+                    tombol tambah. Tombol-tombol angka dan operator lainnya (7, 8, 9, -, 4, 5, 6, *, 1, 2, 3, /, 0, .) 
+                    berfungsi serupa. Tombol = memanggil fungsi calculate() untuk menghitung ekspresi di display, dan tombol 
+                    C memanggil fungsi clearDisplay() untuk membersihkan display.
+                        
+                </div>
+                <p>3.1.b Source Code Modifikasi</p>
+                <div class="d-flex justify-content-center ">
+                <pre class="p-2" style="border: 1px solid black;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Kalkulator&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                        &lt;div id="calculator"&gt;
+                            &lt;input id="display" readonly&gt;
+                            &lt;div id="keys"&gt;
+                                &lt;button onclick="appendToDisplay('+')" class="operator-btn"&gt;+&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('7')"&gt;7&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('8')"&gt;8&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('9')"&gt;9&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('-')" class="operator-btn"&gt;-&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('4')"&gt;4&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('5')"&gt;5&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('6')"&gt;6&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('*')" class="operator-btn"&gt;*&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('1')"&gt;1&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('2')"&gt;2&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('3')"&gt;3&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('/')" class="operator-btn"&gt;/&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('0')"&gt;0&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('.')"&gt;.&lt;/button&gt;
+                                &lt;button onclick="calculate()"&gt;=&lt;/button&gt;
+                                &lt;button onclick="clearDisplay()" class="operator-btn"&gt;C&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('%')" class="operator-btn"&gt;%&lt;/button&gt;
+                                &lt;button onclick="appendToDisplay('**')" class="operator-btn"&gt;^&lt;/button&gt;
+                                &lt;button onclick="calculateSquareRoot()" class="operator-btn"&gt;√&lt;/button&gt;
+                                &lt;button onclick="backspace()" class="operator-btn"&gt;←&lt;/button&gt;    
+                                
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;h2 style="padding-left: 2rem;"&gt;&lt;a href=""&gt;User Manual Book&lt;/a&gt;&lt;/h2&gt;
+                        &lt;script src="index.js"&gt;&lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+                </div>
+                <div class="keterangan text-center mb-2"><i>Gambar 3.1.b Source Code Modifikasi <HTML></HTML></i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    Modifikasi source code untuk HTML yaitu modifikasi untuk menambahkan 
+                    beberapa operasi tambahan seperti modulus (%) pada baris ke-31 yang dimana 
+                    digunakan untuk mencari sisa hasil bagi 2 bilangan, lalu pangkat (^) yang dimana 
+                    digunakan untuk mencari nilai pangkat dari bilangan, dan akar kuadrat (√) yang dimana 
+                    digunakan untuk mencari nilai akar dari bilangan. Selain itu penambahan tombol dengan 
+                    onclick="backspace()" menghapus karakter terakhir di display. 
+                        
+                </div>
+            </div>
+            <div id="item-3-2">
+                <h6>3.2 Source Code css</h6>
+                <p>3.2.a Source Code Asli</p>
+                <div class="d-flex justify-content-center ">
+                  <pre class="p-2" style="border: 1px solid black;">
+                    body{
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        background-color: hsl(0, 0%, 95%);
+                    }
+                    #calculator{
+                        font-family: Arial, sans-serif;
+                        background-color: hsl(0, 0%, 15%);
+                        border-radius: 15px;
+                        max-width: 500px;
+                        overflow: hidden;
+                    }
+                    #display{
+                        width: 100%;
+                        padding: 20px;
+                        font-size: 5rem;
+                        text-align: left;
+                        border: none;
+                        background-color: hsl(0, 0%, 20%);
+                        color: white;
+                    }
+                    #keys{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 10px;
+                        padding: 25px;
+                    }
+                    button{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: hsl(0, 0%, 30%);
+                        color: white;
+                        font-size: 3rem;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: hsl(0, 0%, 40%);
+                    }
+                    button:active{
+                        background-color: hsl(0, 0%, 50%);
+                    }
+                    .operator-btn{
+                        background-color: hsl(35, 100%, 55%);
+                    }
+                    .operator-btn:hover{
+                        background-color: hsl(35, 100%, 65%);
+                    }
+                    .operator-btn:active{
+                        background-color: hsl(35, 100%, 75%);
+                    }
+                  </pre>
+                </div>
+                <div class="keterangan text-center mb-2"><i>Gambar 3.2.a Source Code Asli <HTML></HTML></i></div>
+                  <div class="penjelasan mb-4" style="text-align: justify;">
+                    Kode diatas merupakan Source Code CSS asli dari sumber referensi yang kami ambil, Pertama ada 
+                    selektor body sebagai pengatur beberapa properti untuk seluruh halaman web, mulai dari margin, 
+                    perataan, tinggi halaman sampai warna latar belakang. Lalu selektor calculator sebagai pengatur 
+                    tampilan elemen dengan ID “calculator”, mulai dari font yang dipakai, sudut kelengkungan, lebar 
+                    maksimal dan perilaku overflow jika elemen melebihi batas. Lalu selektor display sebagai pengatur 
+                    tampilan elemen dengan ID “display”, mulai dari lebar elemen, padding, size teks, border, dan warna 
+                    teks. Lalu selektor keys sebagai pengatur tampilan elemen dengan ID “keys”, meliputi display untuk 
+                    mengatur tata letak elemen dalam 4 kolom, grid-template-columns untuk mengatur lebar kolom dalam grid, 
+                    dan gap untuk memberikan jarak antara elemen-elemen dalam grid. Lalu selector button sebagai pengatur 
+                    tampilan tombol-tombol, mulai dari ukuran, warna dan juga kursor. Dan terakhir selektor .operator-btn untuk mengatur 
+                    tampilan tombol, seperti saat tombol tekan akan berubah warna.
+                  </div>
+                  <p>3.2.b Source Code Modifikasi</p>
+                  <div class="d-flex justify-content-center ">
+                  <pre class="p-2" style="border: 1px solid black;">
+                    body{
+                        margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: inherit;
+                        background: linear-gradient(320deg, #8b436c, #d4b75e, #347c6e);
+                    }
+                    #calculator{
+                        font-family: Arial, sans-serif;
+                        background-color: rgba(255,255,255,0.75);
+                        border : 1px solid rgba(255,255,255,0.01);
+                        border-radius: 15px;
+                        max-width: 500px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 30px rgba(35, 35,35, 0.1);
+                        color: #232323;
+                        backdrop-filter: blur(4px);
+                        -webkit-backdroup-filter: blur(4px);
+                        background: rgba(255,255,255,0.30);
+                        border: 1px solid rgba(255,255,255,0.34);
+                        padding: 20px 35px;
+                    }
+                    #display{
+                        width: 90%;
+                        padding: 20px;
+                        font-size: 5rem;
+                        text-align: left;
+                        border: none;
+                        background-color: hsl(0, 0%, 20%);
+                        color: white;
+                    }
+                    #keys{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 10px;
+                        padding: 25px;
+                    }
+                    button{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: hsl(0, 0%, 30%);
+                        color: white;
+                        font-size: 3rem;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background-color: hsl(0, 0%, 40%);
+                    }
+                    button:active{
+                        background-color: hsl(0, 0%, 50%);
+                    }
+                    .operator-btn{
+                        background-color: hsl(35, 100%, 55%);
+                    }
+                    .operator-btn:hover{
+                        background-color: hsl(35, 100%, 65%);
+                    }
+                    .operator-btn:active{
+                        background-color: hsl(35, 100%, 75%);
+                    }
+                  </pre>
+                  </div>
+                  <div class="keterangan text-center mb-2"><i>Gambar 3.2.b Source Code Modifikasi <HTML></HTML></i></div>
+                  <div class="penjelasan mb-4" style="text-align: justify;">
+                      <p>
+                        Modifikasi dari source code modifikasi CSS yaitu dimodifikasi pada selektro body dan #calculator, yang 
+                        dimana terjadi penambahan dan perubahan style. perubahan tersebut yaitu: <br>
+                        1. Modifikasi pada selektor body yaitu :
+                        <ul>
+                            <li>height: inherit;: Mengatur tinggi elemen body> sama dengan tinggi elemen induknya (biasanya tinggi jendela browser).</li>
+                            <li> ackground: linear-gradient(320deg, #8b436c, #d4b75e, #347c6e);: Menerapkan latar belakang gradient linear pada halaman dengan warna yang berubah secara halus dari #8b436c ke #d4b75e ke #347c6e, membentuk latar belakang yang menarik.</li>
+                        </ul>
+                        2. Modifikasi pada Selektor #calculator yaitu :
+                        <ul>
+                            <li>background-color: rgba(255,255,255,0.75);: Mengatur warna latar belakang elemen kalkulator menjadi putih dengan opasitas sebesar 75%.</li>
+                            <li>box-shadow: 0 4px 30px rgba(35, 35,35, 0.1);: Menambahkan bayangan pada elemen kalkulator dengan efek pencahayaan di bagian bawah elemen</li>
+                            <li>backdrop-filter: blur(4px);: Menambahkan efek blur sebanyak 4px ke latar belakang elemen, menciptakan efek transparansi yang kabur.</li>
+                            <li>-webkit-backdroup-filter: blur(4px);: Properti serupa untuk memastikan dukungan pada browser webkit seperti Safari dan Chrome.</li>
+                            <li>background: rgba(255,255,255,0.30);: Memberikan latar belakang elemen kalkulator dengan warna putih dengan opasitas sebesar 30%, menciptakan efek transparansi.</li>
+                            <li>border: 1px solid rgba(255,255,255,0.34);: Mengatur border elemen kalkulator dengan ketebalan 1px dan warna putih dengan opasitas sebesar 34%.</li>
+                            <li>padding: 20px 35px;: Memberikan padding pada elemen kalkulator sebesar 20px di bagian atas dan bawah, serta 35px di bagian kiri dan kanan, memberikan ruang di sekitar konten di dalamnya</li>
+                        </ul>
+                      </p>
+                           
+                  </div>
+              </div>
+              <div id="item-3-3">
+              <h6>3.3 Source Code JavaScript</h6>
+              <p>3.3.a Source Code Asli</p>
+              <div class="d-flex justify-content-center ">
+                <pre class="p-2" style="border: 1px solid black;">
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+    }
+}
+                    
+                </pre>
+              </div>
+              <div class="keterangan text-center mb-2"><i>Gambar 3.3.a Source Code Asli <HTML></HTML></i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    Source code ini merupakan kode java script asli dari sumber refrensi yang kami ambil, dimana kode 
+                    ini berguna untuk menghubungkan logika java script dengan elemen HTML pada laman web, dengan menggunakan
+                     variable display dan fungsi-fungsinya seperti, appendToDisplay(input), clearDisplay(), dan juga calculate() 
+                     kita dapat mengontrol dan memanipulasi tampilan dan data di laman web secara dinamis.  variable display 
+                     mengambil elemen HTML dengan id “display”, ini berupa area input teks dimana user memanipulasi data. Fungsi 
+                     appendToDisplay(input) untuk menerima input dan akan ditambahkan ke dalam elemen dengan ID “display”. F
+                     ungsi clearDisplay(), untuk menghapus semua isi dari elemen dengan ID “display”, jadi ketika dipanggil 
+                     berguna untuk mengosongkan tampilan teks. Fungsi calculate () untuk mengalkulasi ekspresi matematika yang 
+                     ada dalam elemen dengan ID “display”. Jika berhasil, hasilkan akan ditampilkan di elemen “display”.
+                        
+                </div>
+                <p>3.3.b Source Code Modifikasi</p>
+                <div class="d-flex justify-content-center ">
+                <pre class="p-2" style="border: 1px solid black;">
+const display = document.getElementById("display");
+
+function appendToDisplay(input) {
+    display.value += input;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function backspace() {
+    display.value = display.value.slice(0, -1);
+}
+
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.textContent = "Error";
+    }
+}
+function calculateSquareRoot() {
+    try {
+        display.value = Math.sqrt(eval(display.value));
+    } catch (error) {
+        display.textContent = "Error";
+    }
+}
+                </pre>
+                </div>
+                <div class="keterangan text-center mb-2"><i>Gambar 3.3.b Source Code Modifikasi <HTML></HTML></i></div>
+                <div class="penjelasan mb-4" style="text-align: justify;">
+                    Modifikasi source code JS pada program kami yaitu terdapat penambahan fungsi backspace() pada baris 
+                    ke-11 yang digunakan untuk menghapus nilai pada kalkulator. Perintah slice(0, -1) pada baris ke-12 
+                    adalah metode string JavaScript yang mengembalikan bagian dari string. Slice(0, -1) berarti mengambil 
+                    substring dari indeks 0 hingga satu karakter sebelum akhir string. Dengan kata lain, ini menghilangkan 
+                    karakter terakhir dari string. Hasil dari slice(0, -1) kemudian ditetapkan kembali ke display.value, 
+                    sehingga teks di tampilan diperbarui dengan satu karakter terakhir dihapus. Lalu terdapat penambahan 
+                    fungsi yaitu pada baris ke-22 yang dimana merupakan fungsi untuk menghitung akar kuadrat dari nilai 
+                    yang ada di display. Pertama, display.value dievaluasi menggunakan eval() untuk mendapatkan nilai 
+                    matematika dari string. Kemudian, fungsi Math.sqrt() digunakan untuk menghitung akar kuadrat dari 
+                    nilai tersebut. Hasilnya kemudian diperbarui ke display.value.
+
+                        
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

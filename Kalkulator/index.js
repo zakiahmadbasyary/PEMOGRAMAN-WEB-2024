@@ -19,3 +19,10 @@ function calculate() {
         display.textContent = "Error";
     }
 }
+function calculateSquareRoot() {
+    try {
+        display.value = Math.sqrt(eval(display.value));
+    } catch (error) {
+        display.textContent = "Error";
+    }
+}
